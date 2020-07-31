@@ -39,3 +39,4 @@ config/dev.local.exs
 config/prod.secret.exs
 package-lock.json
 Mnesia.*
+.envrc
