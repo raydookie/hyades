@@ -1,3 +1,4 @@
+<%= link "Back", to: Routes.page_path(@conn, :index) %>
 <%= form_for @changeset, @action, [as: :user, class: "centered"], fn f -> %>
   <%= if @changeset.action do %>
     <div class="alert alert-error">
