@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="/home/franklin/repos/hyades/assets/static/favicon.png"
+   inkscape:export-xdpi="18.431999"
+   inkscape:export-ydpi="18.431999">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient831">
+      <stop
+         style="stop-color:#00ac57;stop-opacity:1"
+         offset="0"
+         id="stop827" />
+      <stop
+         style="stop-color:#0089ac;stop-opacity:1"
+         offset="1"
+         id="stop829" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient831"
+       id="linearGradient833"
+       x1="56.885414"
+       y1="208.74254"
+       x2="87.690475"
+       y2="244.83928"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.183298,0,0,1.183298,-13.237112,-42.315094)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="71.644938"
+     inkscape:cy="188.36778"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1918"
+     inkscape:window-height="1178"
+     inkscape:window-x="1"
+     inkscape:window-y="1"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-164.70832)">
+    <rect
+       style="opacity:1;fill:#0d0d30;fill-opacity:1;stroke:none;stroke-width:1.63069081;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect835"
+       width="132.66963"
+       height="133.2366"
+       x="-0.18898265"
+       y="164.23586" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot815"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:Overpass;font-style:normal;font-weight:normal;font-size:37.33333333px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Overpass;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion817"><rect
+           id="rect819"
+           width="330.31989"
+           height="346.48233"
+           x="-228.29448"
+           y="-104.07122" /></flowRegion><flowPara
+         id="flowPara821"></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.84285355px;line-height:1.25;font-family:Overpass;-inkscape-font-specification:Overpass;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient833);fill-opacity:1;stroke:none;stroke-width:0.79936218"
+       x="14.270425"
+       y="284.34106"
+       id="text825"><tspan
+         sodipodi:role="line"
+         id="tspan823"
+         x="14.270425"
+         y="284.34106"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:153.47753906px;font-family:'HK Grotesk';-inkscape-font-specification:'HK Grotesk Medium';fill:url(#linearGradient833);fill-opacity:1;stroke-width:0.79936218">H</tspan></text>
+  </g>
+</svg>

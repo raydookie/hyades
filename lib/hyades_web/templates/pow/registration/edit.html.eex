@@ -1,0 +1,75 @@
+<%= link "Sign out", to: Routes.pow_session_path(@conn, :delete), method: :delete %>
+<div id="settings">
+  <section id="account">
+    <h1>Account Settings</h1>
+    <%= form_for @changeset, @action, [as: :user], fn f -> %>
+      <%= if @changeset.action do %>
+        <div class="alert alert-danger">
+          <p>Oops, something went wrong! Please check the errors below.</p>
+        </div>
+      <% end %>
+
+      <div>
+        <%= label f, :current_password %>
+        <%= password_input f, :current_password %>
+        <%= error_tag f, :current_password %>
+      </div>
+
+      <div>
+        <%= label f, Pow.Ecto.Schema.user_id_field(@changeset) %>
+        <%= email_input f, Pow.Ecto.Schema.user_id_field(@changeset) %>
+        <%= error_tag f, Pow.Ecto.Schema.user_id_field(@changeset) %>
+      </div>
+
+      <div>
+        <%= label f, :password, "New password" %>
+        <%= password_input f, :password %>
+        <%= error_tag f, :password %>
+      </div>
+
+      <div>
+        <%= label f, :password_confirmation, "New password confirmation" %>
+        <%= password_input f, :password_confirmation %>
+        <%= error_tag f, :password_confirmation %>
+      </div>
+      <%= submit "Update" %>
+
+      <h2 style="margin-top: 4rem;">Newsletter settings</h2>
+      <div>
+        <h3>Releases</h3>
+        <div class="checkbox">
+          <%= label f, :show_releases, "Get information" %>
+          <%= checkbox f, :show_releases %>
+        </div>
+        <div class="checkbox">
+          <%= label f, :show_releases_body, "If so, show the details" %>
+          <%= checkbox f, :show_releases_body %>
+        </div>
+
+        <h3>Issues</h3>
+        <div class="checkbox">
+          <%= label f, :show_issues, "Get information about issues" %>
+          <%= checkbox f, :show_issues %>
+        </div>
+        <div class="checkbox">
+          <%= label f, :show_issues_body, "If so, show the details" %>
+          <%= checkbox f, :show_issues_body %>
+        </div>
+
+        <h3>Commits</h3>
+        <div class="checkbox">
+          <%= label f, :show_commits, "Get information about commits" %>
+          <%= checkbox f, :show_commits %>
+        </div>
+      </div>
+      <%= submit "Save" %>
+    <% end %>
+  </section>
+  <section id="billing">
+    <h1>Billing</h1>
+    <%= link "My invoices", to: Routes.user_path(@conn, :billing) %>
+    <%= link "Change my plan", to: Routes.user_path(@conn, :billing) %>
+    <%= link "Cancel my subscription", to: Routes.user_path(@conn, :delete), method: :delete, data: [confirm: "This will cancel your subscription and definitely remove your account. Are you sure?"], class: "danger" %>
+    <%#= link "Last newsletter", to: Routes.user_path(@conn, :last_newsletter) %>
+  </section>
+</div>

@@ -1,0 +1,41 @@
+<div id="stars"></div>
+<section id="homepage">
+  <div>
+    <h1>HYADES</h1>
+    <p id="abstract">
+      Your Github galaxy in your inbox
+    </p>
+  </div>
+
+  <div>
+    <!-- <h2>
+         Never miss an update of an interesting project again.
+         </h2> -->
+    <p id="desc">
+      Every week, receive a summary of everything that happened in your starred Github repos.
+    </p>
+  </div>
+  <img src="<%= Routes.static_path(@conn, "/images/sshot.jpg") %>">
+
+  <div id="prices">
+    <div>
+      <h3>Monthly</h3>
+      <p>€1<sup>80</sup></p>
+    </div>
+    <div>
+      <h3>Yearly</h3>
+      <p>€18<sup>00</sup></p>
+      <p id="save">Save 17%</p>
+    </div>
+  </div>
+
+
+  <div id="buttons">
+    <%= if Pow.Plug.current_user(@conn) do %>
+      <%= link "Settings", to: Routes.pow_registration_path(@conn, :edit), id: "settings" %>
+    <% else %>
+      <%= link "Sign In", to: Routes.pow_session_path(@conn, :new), id: "signin" %>
+      <%= link "Register", to: Routes.pow_registration_path(@conn, :new), id: "register" %>
+    <% end %>
+  </div>
+</section>

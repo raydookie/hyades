@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta name="x-apple-disable-message-reformatting" />
+    <style>
+     body {
+         font-family: sans-serif;
+         color: aliceblue;
+         background-color: #0d0d30;
+     }
+     h1, h2, h3, h4, h5, h6 {
+         color: #00ac57;
+         text-shadow: 0 0 1rem #00ac57;
+     }
+     h1:not(:first-child) {margin-top: 3rem;}
+     a {color: #dd1188;}
+     h1 a {text-shadow: 0 0 1rem #dd1188}
+     ul {list-style-type: none; padding: 0}
+
+
+     img { max-width: 100%; }
+     pre { width: 100%; overflow-x: scroll };
+     ul { padding
+     li.release, li.issue {
+         padding: 0.5rem 1rem;
+     }
+
+     li.release:has(>p:not(:empty)), li.issue:has(> p) {
+         border-bottom: 1px solid #dd1188;
+     }
+
+     a.release, a.issue {
+         font-size: 0.9rem;
+     }
+
+     span.label {
+         padding: 0rem 0.25rem;
+         border-radius: 3px;
+     }
+     pre {
+         max-width: 100%;
+         overflow-x: scroll;
+     }
+    </style>
+  </head>
+  <body>
+    <%= @inner_content %>
+  </body>
+</html>
