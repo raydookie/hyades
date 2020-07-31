@@ -9,17 +9,17 @@ defmodule Hyades.Users do
 
   @impl true
   def create(params) do
-    with {:ok, user} <- pow_create(params) do
-      register_stripe(user)
-    else
+    case pow_create(params) do
+      {:ok, user} ->
+        register_stripe(user)
       {:error, e} ->
         Logger.error "Unable to register #{params["email"]} -- #{inspect e, pretty: true}"
-      {:error, e}
+        {:error, e}
     end
   end
 
   def register_stripe(user) do
-    with {:ok, customer} <- Stripe.Customer.create(%{email: user.email}),
+    with {:ok, customer} <- Stripe.Customer.create(%{email: user.email, name: user.billing_name}),
          {:ok, user} <- Ecto.Changeset.change(user, customer_id: customer.id) |> Hyades.Repo.update do
       {:ok, user}
     else

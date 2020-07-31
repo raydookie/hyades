@@ -4,6 +4,7 @@ defmodule Hyades.Repo.Migrations.CreateUsers do
   def change do
     create table(:users) do
       add :email, :string, null: false
+      add :billing_name, :string, null: false
       add :password_hash, :string
       add :customer_id, :string, default: ""
       add :github_token, :string, default: ""

@@ -8,6 +8,7 @@ defmodule Hyades.Users.User do
 
   schema "users" do
     pow_user_fields()
+    field :billing_name, :string, default: ""
 
     field :customer_id, :string, default: ""
     field :github_token, :string, default: ""
@@ -32,6 +33,7 @@ defmodule Hyades.Users.User do
     |> pow_extension_changeset(attrs)
     |> validate_format(:email, ~r/@/)
     |> validate_length(:email, max: 500)
-    |> cast(attrs, [:show_releases, :show_releases_body, :show_issues, :show_issues_body, :show_commits])
+    |> cast(attrs, [:show_releases, :show_releases_body, :show_issues, :show_issues_body, :show_commits, :billing_name])
+    |> validate_required(:billing_name)
   end
 end
