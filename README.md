@@ -2,7 +2,7 @@
 
 [Hyades](http://hyades.info) is a weekly newsletter containing a summary of everything that happened in your starred Github repos.
 
-![Newsletter sample](/assets/static/images/sshot.jpg)
+![Newsletter sample](./assets/static/images/sshot.jpg)
 
 ## Why?
 
