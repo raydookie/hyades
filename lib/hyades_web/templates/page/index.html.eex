@@ -12,7 +12,7 @@
          Never miss an update of an interesting project again.
          </h2> -->
     <p id="desc">
-      Every week, receive a summary of everything that happened in your starred Github repos.
+      Every week, receive a summary of everything that happened in the Githuv repos you starred ring into your inbox..
     </p>
   </div>
   <img src="<%= Routes.static_path(@conn, "/images/sshot.jpg") %>">

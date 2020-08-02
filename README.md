@@ -14,10 +14,16 @@ Hyades is developed on the [OTP](https://erlang.org/doc/design_principles/users_
 
 To start hacking on your own Hyades instance:
 
+  * Configure your database secrets in `config/dev.exs`
   * Setup the project with `mix setup`
+  * Install the JS buils pipeline with `npm install --prefix ./assets`
   * Start Phoenix endpoint with `mix phx.server`
 
 You can now visit [`localhost:4000`](http://localhost:4000) from your browser.
+
+## Deployment
+
+Hyades is deployed like any other Phoenix application. You will have to fill your secrets in `config/prod.secret.exs`, then follow the [Pow production checklist](https://hexdocs.pm/pow/production_checklist.html#content) and the [Phoenix deployment guide](https://hexdocs.pm/phoenix/deployment.html).
 
 ## License
 
