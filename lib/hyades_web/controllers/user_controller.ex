@@ -97,8 +97,8 @@ defmodule HyadesWeb.UserController do
   # Returns the Stripe Session corresponding to the chosen plan.
   def stripe_plans(conn, %{"type" => type}) do
     price = case type do
-              "monthly" -> "price_1H8rvULSkre068ylp338caqE"
-              "yearly" -> "price_1H8rvULSkre068yl2k7T0rlD"
+              "monthly" -> Application.get_env(:hyades, :monthly_price)
+              "yearly" -> Application.get_env(:hyades, :yearly_price)
             end
 
     with {:ok, session} <- Stripe.Session.create(
